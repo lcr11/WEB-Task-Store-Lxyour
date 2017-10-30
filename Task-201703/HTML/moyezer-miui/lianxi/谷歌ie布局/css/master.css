@@ -1,0 +1,55 @@
+
+
+
+/*谷歌固定布局*/
+
+.box-guge {
+    width: 1000px;
+    height: 80px;
+}
+
+.box-guge>.item {
+    width: 120px;
+    height: 80px;
+    padding: 10px 15px;
+    background-color: aquamarine;
+    float: left;
+}
+
+/*ie固定布局*/
+
+.box-ie {
+    width: 1000px;
+    height: 80px;
+}
+
+.box-ie>.item {
+    box-sizing: border-box;
+    width: 150px;
+    height: 100px;
+    padding: 10px 15px;
+    background-color: aquamarine;
+    float: left;
+}
+
+/*谷歌百分比布局*/
+
+.box-guge>.list {
+    width: 22%;
+    height: 80px;
+    padding: 10px 15px;
+    background-color: aquamarine;
+    float: left;
+}
+
+
+/*ie百分比布局*/
+
+.box-ie>.list {
+    box-sizing: border-box;
+    width: 25%;
+    height: 100px;
+    padding: 10px 15px;
+    background-color: aquamarine;
+    float: left;
+}

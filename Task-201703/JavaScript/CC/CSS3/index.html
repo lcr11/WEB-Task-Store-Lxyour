@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>CSS3</title>
+    <style>
+        input[text]{
+            border: solid 1px #111;
+        }
+        .ul-first > li{
+            background: #1ff;
+            border: solid 1px #111;
+            width: 100px;
+            text-align: center;
+        }
+        .ul-first li:nth-child(even){
+            background: #afafaf;
+        }
+        p[date^="en"] {
+            color: #08c;
+        }
+        p[date$="a"]{
+            border: solid 1px #111;
+        }
+         p[date*="a"]{
+            background: #12da11;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <ul class="ul-first">
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+    </ul>
+    <p date="en-a">en-a</p>
+    <p date="en-b">en-b</p>
+    <p date="en-c">en-c</p>
+    <p date="a">a</p>
+</body>
+</html>

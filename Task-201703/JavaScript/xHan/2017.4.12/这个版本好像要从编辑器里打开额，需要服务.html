@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>肖大涵的作业,简单一点版</title>
+	<script src="jquery-1.9.1.min.js"></script>
+</head>
+<body>
+ <input type="text" id="ftext">
+ <input type="button" onclick="checkfn()" name="chec" value="检测">
+	<script>
+	
+		
+		function obj(e,f){
+			this[e]=f
+		};
+		function checkfn(){
+			var fon={};
+			//console.log(1);
+			var Otext=document.getElementById("ftext").value;
+			//寻找重复的字符
+			for(i=0;i<Otext.length;i++){
+				//console.log(1);
+				var  num=0;
+				for(let j=0;j<Otext.length;j++){				
+					if(Otext[j]==Otext[i]){
+						num+=1;
+					}
+				};
+				var fns=new obj(Otext[i],num) ;
+				$.extend(fon,fns)
+				console.log(1);
+			};
+			console.log(fon);
+			var obj2=[],
+				maxnum="";
+			for (var q in fon){
+			   obj2.push(fon[q])
+				};
+				console.log(obj2);
+		//		输出出现次数最多的项的次数
+				var max=Math.max.apply(null,obj2);
+				//alert(Math.max.apply(null,obj2))
+		//		输出出现次数最多的项
+				for (var q in fon){
+					if(fon[q]==max){
+						maxnum+=q+","
+					}
+				};
+				alert("该字符串中出现最多的是"+maxnum+",出现次数为"+max+"次")
+				};		
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+*{ margin-left:auto; margin-right:auto; margin-top:0px; }
+/*重置样式*/
+/*body,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin:0 ;padding:0; }
+
+em, b, i { font-style:normal;}
+img { border:none;}
+a { text-decoration:none; color:#000;}
+a:hover { text-decoration:underline; color:#f50;}
+li { list-style:none;}
+table { border-spacing:0; border-collapse:collapse;}
+the end*/
+
+/*公共*/
+/*.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.clear { clear: both;}
+清除浮动
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}*/
+/*插件*/
+        .flexslider{position:relative;height:657px;width:  1519px; overflow:hidden;background:url(/image/loading.gif) 100% no-repeat;margin-left: -15px;}
+        .slides{position:relative;z-index:1;}
+        .slides li{height:657px;list-style: none;float: left;}
+        .flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+        .flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+        .flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(/image/dot.png) right 0 no-repeat;cursor:pointer;}/*下点*/
+        .flex-control-nav .flex-active{background-position:0 0;}
+        .flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;float: left;}/*箭头*/
+        .flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+        .flex-direction-nav li a.flex-prev{left:40px;background:url(/image/prev.png) center center no-repeat;}
+        .flex-direction-nav li a.flex-next{right:40px;background:url(/image/next.png) center center no-repeat;}
+        .flex-direction-nav li{list-style: none;float: left;}
+/*插件结束*/
+a { text-decoration:none;color: #dddddd;font-size: 14px;}
+a:hover { text-decoration:none; color:#868686;} 
+.yanshe{color: #868686;text-decoration:none;font-size: 14px;}
+.body{width: 1519px;height: 1033px;}
+.header{height: 50px;background-color: #000000;}
+.logo{width: 46px;height: 17px;float: left;margin: 16px 140px;}
+.header_nav{float: right;margin-right: 125px;}
+.header_nav li{float: left;margin-right: 35px;color: #c1ddc1;list-style: none;position: relative;top: 13px ;right: 0;bottom: 0;left: 0px;}
+.banner{height: 657px;}
+
+.footer_nav{ width: 1240px; height: 166px;border-bottom: 1px #eaeaea solid;}
+.yingchang{margin: 0px -1px;}
+.footer_nav ul{height: 56px;width: 1245px;margin: 0px auto;padding: 0px;padding-top: 5px;margin-top: 55px;}
+.footer_nav ul li{list-style: none;width: 414px;border-left:1px solid #eaeaea;float: left;height: 56px;}
+.tubiao{width: 46px;height: 47px;float:left; margin-right: 26px;margin-left: 68px}
+.menu h3{font-size: 20px;margin-bottom: 0px;color: #333333;line-height: 28px;text-align: left;}
+.menu p{font-size: 14px;color: #939393;}
+.footer_nav ul li:hover p {color: #f78200;}
+.footer_nav ul li:hover h3 {color: #f78200;}
+.footer{height: 160px;}
+.footer ul{width: 620px;margin-top: 65px;margin-bottom: 24px;}
+.footer ul li{list-style: none;float: left;text-align: center;border-left: 1px solid #eaeaea;width: 110px;border-right: 1px solid #eaeaea;font-size: 12px;color: #858585;}
+.footer p{text-align: center;    font-size: 11px;color: #c5c6c8;line-height: 20px;}
+.footer a:hover{text-decoration:underline;color:#f78200 }
+
+
+
+
+
+
+
+
+
+.wenzhang{border: 1px solid #ddd;padding: 20px;width: 900px;float: left;min-height: 600px;}
+.wenzhang h1{font-size: 22px;line-height: 40px;color: aquamarine;text-align: center;}
+.title{margin-bottom: 10px;text-align: center;}
+.wenzhang span{color: #c5c6c8;}
+.wenzhang p{font-size: 14px;text-indent: 2em;line-height: 20px;padding: 5px 0;}
+.nav{float:left;margin-left: 40px;margin-top: 20px;}
+.nav p{margin-top: 30px;}
+.sidebar img{float: left;}
+.sidebar i{font-style:normal;display:inline-block;margin-top: 35px;}
+
+
+
+
+
+
+.mena{height: 180px;border-bottom: 1px #c5c6c8 dashed;}
+.mena>a{display: block;font-size: 20px;line-height: 28px;color: black;margin-bottom: 10px;}
+.mena>a:hover{text-decoration:underline;color: aquamarine;}
+.mena>span{display: block;font-size: 14px;line-height: 20px;}
+.mena i ,
+.mena small{display: inline-block;}
+.mena i{padding: 2px 5px;border: 1px solid #09c;margin-right: 10px;border-radius: 5px;}
+.mena>i>a{color: black}
+.mena>i>a:hover{text-decoration:underline;color: aquamarine;}
+.mena small{color: #dddddd;}
+
+
+
+
+
+

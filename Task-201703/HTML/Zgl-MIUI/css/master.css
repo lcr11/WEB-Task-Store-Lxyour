@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* reset style */
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+
+body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial', sans-serif;}
+em, b, i { font-style:normal;}
+li { list-style:none;}
+img { border:none;}
+a { text-decoration:none; color:#244666;}
+a:hover { text-decoration:underline; color:#f50;}
+table { border-spacing:0; border-collapse:collapse;}
+
+/* public style */
+.hide {display: none;}
+.show {display: block;}
+.flt {float:left;}
+.frt {float:right;}
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+
+.clearfix:after { clear: both;}
+.positionr{position: relative;}
+.positiona{position: absolute;} 
+.flt{float: left;}
+.frt{float: right;}
+.fz16{font-size: 16px;}
+.ml10{margin-left: 10px;}
+.hearder{
+    width: 100%;
+    height: 49px;
+    background: #000;
+    overflow: hidden;
+    
+}
+.hearder .logo{
+    background: url(../images/logo.png);
+    width: 46px;
+    height: 17px;
+    margin: 15px 20px;
+}
+
+.hearder .logo a{
+    font-size: 20px;
+    opacity: 0;
+    
+}
+.nav{
+    margin-right: 50px;
+}
+.nav li{
+    float: left;
+    padding: 15px 15px;
+}
+.nav li a{
+    font-size: 14px;
+    color: #fff;
+}
+.nav li a:hover{
+    text-decoration: none;
+}
+.focus{
+    width: 100%;
+    height: 500px;
+    background: #f7a014;
+    text-align: center;
+}
+.content{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.appbox{
+	display: inline-block;
+	width: 300px;
+	height: 50px;
+	border-right: 1px solid #eee;
+	margin-left: 30px;
+	
+}
+.app-img{
+	display: inline-block;
+	float: left;
+}
+.app-des{
+	display: inline-block;
+	width: 230px;
+	float: right;
+	/*padding-top: 7px;*/
+	padding-right: 10px;
+	
+}
+.footer{
+    width: 100%;
+    height: 160px;
+    background: #fff;
+}
+.footbox{
+	width: 80%;
+	height: 50px;
+	margin: 0 auto;
+	border-top: 1px solid #eee;
+}
+.webbox{
+	width: 600px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.webbox a{
+	padding: 10px 20px;
+	
+	font-size: 14px;
+	color: #000;
+}
+.webbox p{
+	margin-top: 10px;
+	color: #244666;
+}

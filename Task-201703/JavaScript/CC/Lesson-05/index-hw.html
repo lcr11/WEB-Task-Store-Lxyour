@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>第5课作业-拖拽元素</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+   <div id="box">CC</div>
+<script type="text/javascript">
+    var oDiv = document.getElementById("box");  //定义变量oDiv
+    oDiv.onmousedown = function (ev) {          //onmousedown 事件会在鼠标按键被按下时发生。
+        var oEvent = ev;
+        var disX = oEvent.clientX - oDiv.offsetLeft;
+        //clientX 事件属性:返回当事件被触发时鼠标指针向对于浏览器页面（或客户区）的水平坐标;
+        //offsetLeft 获取的是相对于父对象的左边距
+        var disY = oEvent.clientY - oDiv.offsetTop;
+        document.onmousemove = function (ev) {
+            oEvent = ev;
+            oDiv.style.left = oEvent.clientX - disX + "px";
+            //left 获取或设置相对于 具有定位属性(position定义为relative)的父对象 的左边距;
+            //clientX 事件属性返回当事件被触发时鼠标指针向对于浏览器页面（或客户区）的水平坐标
+            oDiv.style.top = oEvent.clientY - disY + "px";
+        }
+        document.onmouseup = function () {//onmouseup 事件会在鼠标按键被松开时发生。
+            document.onmousemove = null;
+            document.onmouseup = null;
+        }
+    }
+</script>
+    
+</body>
+</html>

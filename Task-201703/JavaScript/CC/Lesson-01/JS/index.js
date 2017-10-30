@@ -1,0 +1,12 @@
+var a = "6" + "6";
+console.log(a);
+var b = 6 + "6"; 
+console.log(b);
+var c = 60 + 6;
+console.log(c);
+var d = 6 + 6 + "";
+console.log(d);
+var x = 10 + "20" - 10; 
+console.log(x);
+var v = 10 + + '10'; 
+console.log(v);

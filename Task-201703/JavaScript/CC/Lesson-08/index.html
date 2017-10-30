@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>JS课堂第八节 - JavaScript DOM对象</title>
+</head>
+<body>
+    <h2>DOM节点</h2>
+    <h3>1. 节点属性</h3>
+    <p id="ip" title="hello">JavaScript</p>
+    <script type="text/javascript">
+        var ip = document.getElementById("ip");
+        document.write(ip.nodeName + "<br>" + ip.nodeValue + "<br>" + ip.nodeType);
+        //P  null  1
+    </script>
+
+    <h2>元素内容</h2>
+    <p>JavaScript</p>
+    <input type="button" id="inp" value="click">
+    <script >
+    var inp = document.getElementById("inp");
+    inp.onclick = function(){
+        var ip = document.getElementsByTagName("p");
+        alert(ip[0].innerHTML);
+        ip[0].innerHTML = "<i>51</i>";
+        ip[1].innerText = "<i>CC</i>";
+    }
+    </script>
+
+<!--
+    <h2>元素样式</h2>
+    <h3 id="textbox">JavaScript</h3>
+    <input type="button" id="input" value="click">
+    <script>
+        var input = document.getElementById("input");
+        inp.onclick = function(){
+            var oh = document.getElementById("textbox");
+            oh.style.color = "#f00";
+            oh.style.width = "300px";
+            oh.style.backgroundColor = "#08c";
+        }
+    </script>
+-->
+
+
+
+    <h2>操作节点</h2>
+    <h3>2. 子节点</h3>
+    <ul id="father"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ul>
+    <script>
+        var li_num = 0;
+        var childNodes = document.getElementById("father").childNodes;
+        for(var i = 0; i<childNodes.length;i++){
+            document.write("节点名：" + childNodes[i].nodeName + ",");
+            document.write("节点类型：" + childNodes[i].nodeType + ",");
+            if(childNodes[i].nodeType == 1){
+                document.write("我是" + childNodes[i].innerHTML + ".<br>");
+                li_num++;
+            }
+            else{
+                document.write("<br>");
+                console.log("这是一个空节点，不用理他");
+            }
+        }
+        document.write("子节点数目：" + childNodes.length + "<br>");
+        document.write("li 子节点数目：" + li_num + "<br>");
+        document.write("文本子节点数目：" + (childNodes.length - li_num));
+    </script>
+
+    <h3>3. 父级节点</h3>
+    <div id="grandfather" title="孩子救我！">
+    <ul id="father">
+        <li>大娃</li>
+        <li id="second_children">二娃</li>
+        <li>三娃</li>
+        <li>四娃</li>
+        <li>五娃</li>
+        <li>六娃</li>
+        <li>七娃</li>
+    </ul>
+    </div>
+    <script type="text/javascript">
+        var grandfather = document.getElementById("second_children").parentNode.parentNode;
+        document.write(grandfather.id + "说：" + grandfather.title);
+    </script>
+
+    <h3>4. 兄弟节点</h3>
+    <ul id="father">
+        <li title="force_max">大娃</li>
+        <li id="second_children">二娃</li>
+        <li title="fire">三娃</li>
+        <li>四娃</li>
+        <li>五娃</li>
+        <li>六娃</li>
+        <li>七娃</li>
+    </ul>
+    <script>
+        function getprenode(node){
+            var prenode = node.previousSibling;
+            while(prenode && prenode.nodeType !=1){
+                prenode = prenode.previousSibling;
+            }
+            return prenode;
+        }
+        function getnextnode(node){
+            var nextnode = node.nextSibling;
+            while(nextnode && nextnode.nodeType !=1){
+                nextnode = nextnode.nextSibling;
+            }
+            return nextnode;
+        }
+        var second_children = document.getElementById("second_children");
+        var first_children = getprenode(second_children);
+        var third_children = getnextnode(second_children);
+        alert(first_children.innerHTML + first_children.title);
+        alert(third_children.innerHTML + third_children.title);
+    </script>
+
+</body>
+</html>

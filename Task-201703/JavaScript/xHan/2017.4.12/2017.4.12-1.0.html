@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>肖大涵的作业，拐弯抹角版</title>
+	
+</head>
+<body>
+ <input type="text" id="ftext">
+ <input type="button" onclick="checkfn()" name="chec" value="检测">
+	<script> 
+//	判断是否对象为空
+	function judge(e){
+	   for(var i in e){
+		   //如果不为空，则会执行到这一步，返回true
+		return true;
+	  }    
+	   return false;
+	 }
+//		点击执行的函数
+	function checkfn(){	
+	    var  oText=document.getElementById("ftext").value;
+		var obj={};
+		//console.log();
+		for(i=0;i<oText.length;i++){
+			 var item= oText[i];
+			if(judge(obj)){
+			//console.log("有元素");
+				for (var q in obj){
+					//console.log(item);
+					if(obj[item]){
+						//console.log("存在");
+					   obj[item]+=1;
+					  //console.log(obj)
+                      break
+					 }else{				 
+						//console.log("不存在");						 
+						 obj[item]=1;
+						//console.log(obj);
+						break
+					 }					
+			   }
+			}else{						 
+				obj[item]=1;
+				//console.log("空");
+				 //console.log(obj)
+				 };			
+		}						
+		//console.log(obj);
+		var obj2=[];
+		var maxnum='';
+		for (var q in obj){
+			obj2.push(obj[q])
+		};
+		console.log(obj2);
+//		输出出现次数最多的项的次数
+		var max=Math.max.apply(null,obj2);
+		//alert(Math.max.apply(null,obj2))
+//		输出出现次数最多的项
+		for (var q in obj){
+			if(obj[q]==max){
+				maxnum+=q+","
+			}
+		};
+		alert("该字符串中出现最多的是"+maxnum+",出现次数为"+max+"次")
+	}
+	</script>
+</body>
+</html>

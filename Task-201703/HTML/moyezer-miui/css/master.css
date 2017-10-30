@@ -1,0 +1,218 @@
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin:0 ;padding:0; }
+body { color:#000; font-size:12px; font-style:normal; font-family:"Microsoft Yahei";}
+em, b, i { font-style:normal;}
+img { border:none;}
+a { text-decoration:none; color:#000;}
+a:hover { text-decoration:none; color:#f50;}
+li { list-style:none;}
+table { border-spacing:0; border-collapse:collapse;}
+/*清除浮动*/
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+/*公用样式*/
+.flt{float: left;}
+.frt{float: right;}
+.app-box :first-chlid{
+    border: 0;
+}
+/*头*/
+.header {
+    height: 49px;
+    background-color: #000000;
+}
+.head-con {
+    position: relative;
+    width: 1240px;
+    height: 49px;
+    margin: 0 auto;
+}
+.miui-logo {
+    position: absolute;
+    width: 46px;
+    height: 17px;
+    text-indent: -9999px;
+    background-image:url(../images/index_0.png);
+    top: 16px;
+    left: 0;
+}
+.miui-menu {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 600px;
+    height: 30px;
+    text-align: right;
+    line-height: 30px;
+}
+.miui-menu a {
+    color: #dddddd;
+    margin-left: 30px;
+    font-size: 14px;
+}
+.miui-menu a:hover {
+    color: #868686;
+}
+.miui-menu a.current {
+    color: #868686;
+}
+.content-on {
+    background-color:#fafafa;
+    height: 825px;
+}
+.focus {
+    height: 658px;
+    background-color: #08c;
+}
+
+
+/* slide */
+.slide-main{height:658px;position:relative;}
+.prev,.next{display:block;width:44px;height:44px;position:absolute;z-index:222;top:267px;overflow:hidden;cursor:pointer;opacity:0.6;-moz-opacity:0.6;filter:alpha(opacity=60);}
+.prev{left:70px;}
+.next{right:70px;}
+.prev:hover,.next:hover,.nav-main a:hover,.nav-main a.cur{opacity:1;-moz-opacity:1;filter:alpha(opacity=100);}
+.item{display:block;width:100%;height:5px;position:absolute;z-index:124;top:540px;left:0;text-align:center;}
+.item a{display:inline-block;width:24px;height:5px;margin-right:11px;background:#333;opacity:0.6;-moz-opacity:0.6;filter:alpha(opacity=60);overflow:hidden;}
+.item a.cur{background:#fff;}
+.slide-box,.slide{display:block;width:100%;height:580px;overflow:hidden;}
+.slide-box{position:relative;}
+.slide{display:none;height:490px;padding-top:89px;background:#ff6900;position:relative;position:absolute;z-index:8;}
+#bgstylea{background:#ff6900;}
+#bgstyleb{background:#193d85;}
+#bgstylec{background:#000;}
+
+.banAnimate .obj-a{display:block;animation-name:baoAni;-webkit-animation:baoAni 0.4s linear 0s normal none;-moz-animation:baoAni 0.4s linear 0s normal none;animation:baoAni 0.4s linear 0s normal none;}
+@-webkit-keyframes baoAni{from{opacity:0;left:60%;} to{opacity:1;left:50%;} }
+@-moz-keyframes baoAni{from{opacity:0;left:60%;} to{opacity:1;left:50%;} }
+@keyframes baoAni{from{opacity:0;left:60%;} to{opacity:1;left:50%;} }
+.banAnimate .obj-b{display:block;animation-name:saAni;-webkit-animation:saAni 0.4s linear 0s normal none;-moz-animation:saAni 0.4s linear 0s normal none;animation:saAni 0.4s linear 0s normal none;}
+@-webkit-keyframes saAni{from{opacity:0;-webkit-transform:scale(0,0);} to{opacity:1;-webkit-transform:scale(1,1);} }
+@-moz-keyframes saAni{from{opacity:0;-moz-transform:scale(0,0);} to{opacity:1;-moz-transform:scale(1,1);} }
+@keyframes saAni{from{opacity:0;transform:scale(0,0);} to{opacity:1;transform:scale(1,1);} }
+.watch-code.code-show{display:block;animation-name:scode;-webkit-animation:scode 0.3s linear 0s normal none;-moz-animation:scode 0.3s linear 0s normal none;animation:scode 0.3s linear 0s normal none;}
+@-webkit-keyframes scode{from{opacity:0;-webkit-transform:scale(1,0);transform-origin:left bottom;} to{opacity:1;-webkit-transform:scale(1,1); transform-origin: left bottom;} }
+@-moz-keyframes scode{from{opacity:0;-moz-transform:scale(1,0); transform-origin:left bottom;} to{opacity:1;-moz-transform:scale(1,1);transform-origin:bottom bottom;} }
+@keyframes scode{from{opacity:0;transform:scale(1,0);transform-origin:left bottom;} to{opacity:1;transform:scale(1,1);transform-origin: left bottom;} }
+.banAnimate .obj-c,.banAnimate .obj-e{display:block;animation-name:saAnic;-webkit-animation:saAnic 0.3s linear 0s normal none;-moz-animation:saAnic 0.3s linear 0s normal none;animation:saAnic 0.3s linear 0s normal none;}
+@-webkit-keyframes saAnic{from{opacity:0;left:47%;} to{opacity:1;left:50%;} }
+@-moz-keyframes saAnic{from{opacity:0;left:47%;} to{opacity:1;left:50%;} }
+@keyframes saAnic{from{opacity:0;left:47%;} to{opacity:1;left:50%;} }
+.banAnimate .obj-d,.banAnimate .obj-f{display:block;animation-name:saAnid;-webkit-animation:saAnid 0.3s linear 0s normal none;-moz-animation:saAnid 0.3s linear 0s normal none;animation:saAnid 0.3s linear 0s normal none;}
+@-webkit-keyframes saAnid{from{opacity:0;left:53%;} to{opacity:1;left:50%;} }
+@-moz-keyframes saAnid{from{opacity:0;left:53%;} to{opacity:1;left:50%;} }
+@keyframes saAnid{from{opacity:0;left:53%;} to{opacity:1;left:50%;} }
+
+
+.bot-border {
+    padding: 55px 0;
+    width: 1240px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e1e1;
+}
+.app-box {
+    width: 32%;
+    float: left;
+    border-left: 1px solid #e1e1e1;
+}
+.app-box :hover .app-text-bottom {
+    color: #f78200;
+}
+.app-box :hover .app-text-top {
+    color: #f78200;
+}
+.app-img {
+    margin-left: 75px;
+    margin-right: 24px;
+    float: left;
+    cursor: pointer;
+}
+.app-text {
+    float: left;
+}
+.app-text-top {
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.app-text-bottom {
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    color: #939393;
+    cursor: pointer;
+}
+
+.footer {
+    height: 160px;
+    background-color: #fafafa;
+}
+.footer-box {
+    width: 1240px;
+    margin: 0 auto;
+}
+.footer-nav {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-nav li {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 14px;
+    font-size: 14px;
+    border-left: 1px solid #09c;
+    text-align: center;
+}
+.footer-nav li:first-child ,.app-box:first-child {
+    border-left: 0;
+}
+.footer-nav li a {
+    color: #858585;
+}
+.footer-nav li :hover {
+    color: #f78200;
+    text-decoration:underline;
+}
+.footer-box>p {
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    color: #c5c6c8;
+}
+.weixin a img {
+    position: absolute;
+    top: -150px;
+    left: -25px;
+    display: none;
+}
+.weixin a:hover img {
+    display: block;
+}
+.nav-menu{
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

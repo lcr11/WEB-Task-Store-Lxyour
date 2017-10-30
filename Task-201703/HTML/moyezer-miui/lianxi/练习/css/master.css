@@ -1,0 +1,193 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin:0 ;padding:0; }
+body {  color:#000; font-size:12px; font-style:normal; font-family:"Microsoft Yahei";}
+em, b, i { font-style:normal;}
+img { border:none;}
+a { text-decoration:none; color:#270606;}
+a:hover { text-decoration:inherit; color:#595959;}
+li { list-style:none;}
+table { border-spacing:0; border-collapse:collapse;}
+body.p,h1,h2,h3,h4,h5,h6,dl,dd{margin:0;font-size:12px;font-weight: normal;}
+ol,ul{list-style:none;padding:0;margin:0;}
+img{border:none;}
+a{text-decoration:none;}
+/*清除浮动*/
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+/*the end*/
+
+/*index*/
+.header {
+  
+}
+.content {
+    position: relative;
+}
+.mypicture {
+    position: absolute;
+    width: 70%;
+    max-height: 700px;
+}
+.logos {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 700;
+    left: 100px;
+    top: 100px;
+}
+
+.title01 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    font-size: 25px;
+}
+.title02 {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.title03 {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.title04 {
+    position: absolute;
+    top: 550px;
+    left: 100px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.picture-text01 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 600;
+    left: 890px;
+    top: 300px;
+}
+.picture-text02 {
+    position: absolute;
+    font-size: 15px;
+    left: 800px;
+    top: 295px;
+}
+.picture-text03 {
+    position: absolute;
+    left: 1000px;
+    top: 338px; 
+}
+.picture-text04 {
+    position: absolute;
+    font-size: 15px;
+    left: 890px;
+    top: 350px; 
+} 
+
+/*index02*/
+.xinwen {
+    min-height: 800px;
+    border-bottom: 1px solid #8ab5cb;
+    padding: 50px;
+}
+.xinwen img {
+    float: left;
+/*    图文环绕需要给图片加个float.*/
+    max-width: 600px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.xinwen p {
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.xinwen02 {
+    min-height: 800px;
+    padding: 50px;
+}
+.xinwen02 img {
+    float: right;
+     max-width: 600px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.xinwen02 p {
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.foot-nav {
+    height: 30px;
+    background-color:#ffff74;
+    padding: 0 15px; 
+    display: flex; 
+    display: -webkit-flex;
+}
+
+.item{
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    border-left: 1px solid #444;
+    height: 20px;
+    margin-top: 5px;
+    color: #ac6009;
+}
+.item:first-child{
+    border-left: 0;
+}
+/*index03*/
+.header03{
+    height: 50px;
+    bottom: 0;
+    background-color: firebrick;
+    display: flex;
+    display: -webkit-flex;
+}
+.header03 a {
+    -webkit-flex:1;
+    flex:1;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.con-self-adaption{
+    position: relative;
+    padding: 50px;
+} 
+.self-adaption img{
+    max-width: 600px;
+    margin-right: 10px;
+}
+
+.content-text {
+    position: absolute;
+    font-size: 16px;
+    line-height: 26px;
+    top: 30px;
+    left: 650px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

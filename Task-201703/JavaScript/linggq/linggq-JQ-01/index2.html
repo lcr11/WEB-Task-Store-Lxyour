@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜鸟教程-jq的遍历</title>
+</head>
+<script src="jquery-3.2.1.js"></script>
+<style>
+    .max *{
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }   
+/*    ヾ(｡｀Д´｡)第一次知道 CSS样式后面加个*可以让这个的下面子集都享受统一个样式*/
+</style>
+<body class="max">body 最大的
+   <div style="width:500px;">div
+       <ul>ul
+           <li>li
+               <span>span</span>
+           </li>
+       </ul>
+   </div>
+    
+     
+<script>
+//$(document).ready(function(){
+//    $("span").parentsUntil("div").css({"color":"red","border":"2px solid red"})
+//});
+
+//      parentsUntil() 这个是鉴于span父级到div(我设的是div)之间的所有祖先元素  
+
+//$(document).ready(function(){
+//    $("span").parent("li").css({"color":"red","border":"2px solid red"})
+//});    
+//    
+//    
+//    parent()这个是找上一级父级的 ()不用写入  写入高于父级的的话会没反应的
+    
+    
+//    $(document).ready(function(){
+//        $("span").parents("ul").css({"color":"red","border":"2px solid red"})
+//    })
+//    
+//    parents()这个可以找到所有父级 ()参数可以写入标签 就指定标签了
+</script>  
+        
+</body>
+</html>

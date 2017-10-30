@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Lesson-05-JavaScript 网页交互（事件）</title>
+</head>
+<body>
+    <h2>获取HTML元素</h2>
+    <h3>1.通过id获取元素</h3>
+    <p>document.getElementById();</p> 
+    <p id="pid">JavaScript</p>
+<script >
+    var pid = document.getElementById("pid");
+    document.write("内容：" + pid.innerHTML); //输出获取的 P 标签内容。
+</script>
+
+    <h3>2.通过标签名获取元素</h3>
+    <p></p>
+    <p>document.getElementsByTagName()</p>
+<!--
+    <p>Hello</p>
+    <p>DO u like</p>
+    <p>JavaScript</p>
+    <script>
+        var p = document.getElementsByTagName("p");
+        for(var i = 0; i<p.length;i++){
+            alert(p[i].innerHTML);
+        }
+    </script>
+-->
+<!--
+    <h3>3. 通过名称获取元素</h3>
+    <p>getElementsByName()</p>
+    <p>返回的是元素的数组，下标从 0 开始。</p>
+    <input name="iname" type="text" value="1">
+    <input name="iname" type="text" value="2">
+    <input name="iname" type="text" value="3">
+    <input name="iname" type="text" value="4">
+    <input name="iname" type="text" value="5">
+    <input name="iname" type="text" value="6">
+    <script>
+        var inp = document.getElementsByName("iname");
+        for(var i = 0;i<inp.length;i++){
+            document.write(inp[i].value);
+        }
+    </script>
+-->
+    <h2>获取属性</h2>
+    <h3>1. 获取属性与设置属性</h3>
+    <p id=t"pid" title="JavaScript">JavaScript</p>
+    <button id="btn">click</button>
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onclick = attr;
+        function attr(){
+            var pid = document.getElementById("pid");
+        alert(pid.getAttribute("id"));
+        alert(pid.getAttribute("title"));
+        pid.setAttribute("title", "CC");
+        alert(pid.getAttribute("title"));
+        }
+    </script>
+    
+    <h2>JavaScript事件</h2>
+    <h3>4. 鼠标单击</h3>
+    <p>用法： 元素.onclick = 函数名;</p>
+    <p id="pid">JavaScript</p>
+    <button id="btn">click</button>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn");
+        btn.onclick = hello;
+        function hello() {
+        var pid = document.getElementById("pid");
+        pid.innerHTML = "Hello!";
+    }
+    </script>
+    
+    <p>5. 鼠标经过与移出</p>
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onmouseover = over;
+        btn.onmouseout = out;
+        function over() {
+            var pid = document.getElementById("pid");
+            pid.innerHTML = "over";
+        }
+        function out() {
+            var pid = document.getElementById("pid");
+            pid.innerHTML = "out";
+        }
+    </script>
+    
+<!--
+    <p>6. 光标焦点与失去焦点</p>
+    <script>
+        var inp = document.getElementById("input");
+        inp.onfocus = focus;
+        inp.onblur = blur;
+        function focus() {
+            var pid = document.getElementById("pid");
+            pid.innerHTML = "focus";
+        }
+        function blur() {
+            var pid = document.getElementById("pid");
+            pid.innerHTML = "blur";
+        }
+    </script>
+-->
+    
+<!--
+    <h2>事件冒泡与事件委托（事件代理）</h2>
+    <p>事件委托</p>
+    <ul id="ulTag">
+        <li>I'm li-01</li>
+        <li>I'm li-02</li>
+        <li>I'm li-03</li>
+        <li>I'm li-04</li>
+        <li>I'm li-05</li>
+        <li>I'm li-06</li>
+        <li>I'm li-07</li>
+        <li>I'm li-08</li>
+        <li>I'm li-09</li>
+        <li>I'm li-10</li>
+    </ul>
+    <script>
+        var ulTag = document.getElementById("ulTag");
+        ulTag.onclick = function (e){
+            var target = e.target;
+            var tagName = target.tagName.toLowerCase();
+            console.log(tagName);
+            if(tagName === ‘li’){
+                var val = target.innerHTML;
+                console.log(val);
+            }
+        }
+    </script>
+-->
+
+
+
+</body>
+</html>

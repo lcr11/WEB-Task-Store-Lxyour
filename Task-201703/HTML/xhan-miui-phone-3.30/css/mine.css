@@ -1,0 +1,183 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin:0 ;padding:0; }
+body { color:#000; font-size:12px; font-style:normal; font-family:"Microsoft Yahei";}
+em, b, i { font-style:normal;}
+img { border:none;}
+a { text-decoration:none; color:#000;}
+a:hover { text-decoration:underline; color:#f50;}
+li { list-style:none;float:left;}
+table { border-spacing:0; border-collapse:collapse;}
+/*the end*/
+
+/*公共*/
+.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.clear { clear: both;}
+/*清除浮动*/
+.clearfix { *zoom: 1;}
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+html{
+  font-size: 100px
+}
+body{
+	max-width: 6.4rem;
+	margin: 0 auto
+}
+
+/*头部彩条*/
+
+
+header{
+  width: 100%;
+  height: 1rem;
+  background: url("../image/mine/ttbg.png") 0 0/contain repeat-x;
+  overflow: hidden;
+}
+header>.user{
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 0.02rem solid #f8b16f;
+  border-radius: 50%;
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+  background: white;
+  overflow: hidden;
+}
+header>.user>img{
+  width: 100%
+}
+
+/*内容部分*/
+
+section.content{
+  width: 100%;
+  overflow: hidden;
+}
+
+section.content>.top{
+  width: 100%;
+}
+
+section.content>.top>.title{
+  width: 100%;
+  height: 0.5rem;
+  background: -pink;
+  border-bottom: 0.01rem solid #d3d3d3
+}
+section.content>.top>.title>span{
+  font-size: 0.16rem;
+  line-height: 0.5rem;
+  color: #404040;
+  float: left;
+  margin-left: 0.2rem
+}
+section.content>.top>.title>a{
+  display: block;;
+  float: right;;
+  line-height: 0.5rem;
+  color: #d3d3d3;
+  margin-right: 0.2rem
+}
+
+/*按钮部分*/
+section.content>.top>.btns{
+  width: 100%;
+  height: 1rem;
+  display: flex;
+}
+
+section.content>.top>.btns>li{
+  flex:1;
+  height: 100%;
+  background: -red;
+  text-align: center;
+
+}
+section.content>.top>.btns>li>a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+section.content>.top>.btns>li>a>img{
+  margin-top: 0.1rem;
+  transform: scale(0.6);
+}
+section.content>.top>.btns>li>a>p{
+  color: #404040;
+}
+section.content>.bottom{
+  width: 100%;
+  overflow: hidden;
+}
+section.content>.bottom>li{
+  width: 100%;
+  height: 0.6rem;
+  background: -gray
+}
+section.content>.bottom>li>a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+}
+section.content>.bottom>li>a>b{
+  flex:2;
+  background:- red;
+  text-align: center;
+}
+section.content>.bottom>li>a>b>img{
+  width: 0.4rem;
+  margin-top: 0.1rem
+}
+section.content>.bottom>li>a>p{
+  flex: 7;
+    background:- green;
+    font-size: 0.16rem;
+    line-height: 0.6rem;
+}
+section.content>.bottom>li>a>span{
+  flex:1;
+    background: -blue;
+    display: block;;
+    line-height: 0.6rem;
+    font-size: 0.16rem;
+}
+
+
+
+/**脚步的导航*/
+footer{
+    width: 100%;
+    height: 0.5rem;
+    border-top:1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: white
+};
+footer>.navbar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+footer>.navbar>li{
+  width: 25%;
+  text-align: center;
+  display: block;
+}
+
+footer>.navbar>li>img{
+  width: 0.25rem;
+  height: 0.25rem;
+  margin-top: 0.05rem
+}
+footer>.navbar>li>p{
+  color: #a3a3a3;
+  font-size: 0.12rem;
+  margin-top: 0;
+  width: 100%;
+  line-height: 0.12rem
+}

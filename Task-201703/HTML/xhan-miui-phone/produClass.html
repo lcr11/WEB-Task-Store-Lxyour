@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>小米模仿站</title>
+  <link rel="stylesheet" href="css/produClass.css">
+  <link rel="stylesheet" href="plugin/swiper-3.4.1.min.css">
+  <link rel="stylesheet" href="plugin/animate.min.css">
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="plugin/swiper-3.4.1.min.js"></script>
+  
+</head>
+<body>
+    <!-- **********************-头部固定搜索款 - **********************-->
+   <header>
+		<div class="backhome">
+			<a href="index.html">
+				<img src="image/procuClass/%E8%BF%94%E5%9B%9E.png" alt="">
+			</a>
+		</div>
+		<div class="title">
+			商品分类
+		</div>
+		<div class="ff">
+			<a href="#">
+				<img src="image/procuClass/%E6%90%9C%E7%B4%A2_%E6%90%9C%E7%B4%A2.png" alt="">
+			</a>
+		</div>
+	</header>
+  <script>
+	  $(window).on("scroll", function () {
+                var sTop = $(window).scrollTop();
+                var sTop = parseInt(sTop);
+                if (sTop >= 50) {
+                    $("header").hide(300);
+					$(".slide-nav").css({position:"fixed",left:"0rem",top:"0rem"})
+                    //alert(1)
+                }else{
+                    $("header").show(300);
+					//alert(1);
+					$(".slide-nav").css("position","relative")
+                }
+            });
+  </script>
+	<!--文字导航-->
+ <section class="slide-nav">
+      <div class="swiper-container">
+         <div class="swiper-wrapper">
+             <div class="swiper-slide"><a href="#ps1">小米手机</a></div>
+             <div class="swiper-slide"><a href="#ps2"> 电视盒子</a></div>
+             <div class="swiper-slide"><a href="#ps3">小米充电器</a></div>
+             <div class="swiper-slide"><a href="#ps4">米盒子</a></div>
+             <div class="swiper-slide"><a href="#ps5"> 小米手机note</a></div>
+             <div class="swiper-slide"><a href="#ps6">关于minu</a> </div>
+             <div class="swiper-slide"><a href="#ps7"> 小米电视</a></div>
+             <div class="swiper-slide"><a href="#ps8"> 小米创意</a></div>
+             <div class="swiper-slide"><a href="#ps9">电视盒子</a></div>
+ 
+         </div>        
+      </div>
+	</section>
+	 <script> 
+			 $(function(){
+			  var mySwiper = new Swiper ('.swiper-container', {
+				direction: 'horizontal',
+				loop: true,
+				//autoplay:100,
+				 slidesPerView : 4
+      });
+    })
+     </script>
+<!--内容部分-->
+    <section class="pro-content">
+         <!--分类1-->
+    	<div class="pro-block" id="ps1">
+    		<img src="image/procuClass/1-1.png" alt="">
+    		<p>手机.电话卡</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_02.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_09.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_13.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_14.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_15.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_08.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	 <!--分类2-->
+    	<div class="pro-block" id="ps2">
+    		<img src="image/procuClass/1-2.png" alt="">
+    		<p>电视盒子</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_02.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	 <!--分类3-->
+    	<div class="pro-block" id="ps3">
+    		<img src="image/procuClass/1-3.png" alt="">
+    		<p>小米充电器</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_02.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>   	
+    	 <!--分类4-->
+    	<div class="pro-block" id="ps4">
+    		<img src="image/procuClass/1-4.png" alt="">
+    		<p>小米手机note</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_29.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_27.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_28.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_29.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_37.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_38.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<!--分类5-->
+    	<div class="pro-block" id="ps4">
+    		<img src="image/procuClass/1-5.png" alt="">
+    		<p>关于minu</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_49.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_39.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_09.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_48.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_47.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_27.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_27.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_48.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_28.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_09.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_29.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_18.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_15.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_39.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    		<!--分类6-->
+    		<div class="pro-block" id="ps6">
+    		<img src="image/procuClass/1-2.png" alt="">
+    		<p>电视盒子</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_02.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	 <!--分类7-->
+    	<div class="pro-block" id="ps7">
+    		<img src="image/procuClass/1-3.png" alt="">
+    		<p>小米充电器</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_02.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_03.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_07.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>   	
+    	 <!--分类8-->
+    	<div class="pro-block" id="ps8">
+    		<img src="image/procuClass/1-4.png" alt="">
+    		<p>小米手机note</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_29.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_27.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_28.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_29.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_37.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_38.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<!--分类9-->
+    	<div class="pro-block" id="ps9">
+    		<img src="image/procuClass/1-5.png" alt="">
+    		<p>关于minu</p>
+    		<ul class="module5">
+    			<li>
+    			   <a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_49.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_39.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_09.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_48.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_47.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_27.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_27.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_01.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_48.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_28.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_09.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_29.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_18.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318121434_15.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    			<li>
+    			<a href="">
+    				<img src="image/procuClass/QQ%E6%88%AA%E5%9B%BE20170318133708_39.png" alt="">
+    				<p>小米手机</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+   <!--*********************脚步导航*********************-->
+  <footer>
+    <ul class="navbar">
+        <li><a href="index.html">
+           <img src="image/home.png" alt="">
+           <p>首页</p>
+        </a></li>
+        <li><a href="#">
+          <img src="image/flei-c.png" alt="">
+          <p>分类</p>
+        </a></li>
+        <li><a href="#">
+          <img src="image/gwu.png" alt="">
+          <p>购物车</p>
+        </a></li>
+        <li><a href="#">
+          <img src="image/me.png" alt="">
+          <p>我的</p>
+        </a></li>
+    </ul>
+  </footer>
+
+  
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>*-->
+  <!--*********新闻淡入淡出**********-->
+  <script>
+  $(function(){
+    var i=1;
+    setInterval(function(){
+            $(".sczb-tp>.tp-text>p").eq(i).css("opacity","1").siblings().css("opacity","0");
+            i++;
+            if(i==3){
+              i=0
+            }
+    },3000);
+    //  <!--****顶部导航变色******-->
+  $(window).on("scroll", function () {
+                var sTop = $(window).scrollTop();
+                var sTop = parseInt(sTop);
+                if (sTop >= 150) {
+                    $("header").css("background","rgba(229, 131, 53, 0.992157)");
+                    //alert(1)
+                }else{
+                    $("header").css("background","");
+                }
+            });
+  })
+
+    </script>
+</body>
+</html>

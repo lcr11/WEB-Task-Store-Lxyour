@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>热门搜索</title>
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="plugin/swiper-3.4.1.min.css">
+	<link rel="stylesheet" href="plugin/animate.min.css">
+</head>
+
+<body>
+	<header>
+		<div class="backhome">
+			<a href="index.html">
+				<img src="image/backhome.png" alt="">
+			</a>
+		</div>
+		<div class="find">
+			<input type="text" id="spSearch" value="" placeholder="搜索吧">
+		</div>
+		<div class="ff">
+			<a href="#">
+				<img src="image/find.png" alt="">
+			</a>
+		</div>
+	</header>
+	<section class="content">
+		<p>热门搜索</p>
+		<div class="banner" style="z-index=0">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="">
+							<img src="image/1-1.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<img src="image/1-1.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination" style="display:none"></div>
+				<!-- 如果需要滚动条 -->
+				<div class="swiper-scrollbar" style="display:none"></div>
+			</div>
+		</div>
+
+		<div class="jump">
+			<a href="#" style="border-color:rgb(140, 218, 222);">小米5c</a>
+			<a href="#" style="border-color:rgb(187, 208, 144)">小米4x</a>
+			<a href="#" style="border-color:rgb(252, 160, 167);">小米note2</a>
+			<a href="#" style="border-color:rgb(250, 194, 136);">耳机</a>
+		</div>
+	</section>
+	<div style="width:100%;overflow:hidden">
+		<ul id="result" style="display:none;transition:height 1s ease;overflow:hidden">
+			<!--<li>搜索到0条结果</li>-->
+		</ul>
+	</div>
+
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="plugin/swiper-3.4.1.min.js"></script>
+	<script src="js/search.js"></script>
+	<script>
+		$(function () {
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'horizontal',
+				loop: true,
+				autoplay: 5000,
+				// 如果需要分页器
+				pagination: '.swiper-pagination',
+				// 如果需要前进后退按钮
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				// 如果需要滚动条
+				scrollbar: '.swiper-scrollbar',
+			});
+		})
+	</script>
+</body>
+
+</html>

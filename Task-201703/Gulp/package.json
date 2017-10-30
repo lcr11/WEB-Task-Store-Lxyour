@@ -1,0 +1,19 @@
+{
+  "name": "gulp-linggq",
+  "version": "1.0.0",
+  "description": "learn gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "node"
+  },
+  "keywords": [
+    "gulp"
+    "bulild"
+  ],
+  "author": "linggq",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0"
+  }
+}

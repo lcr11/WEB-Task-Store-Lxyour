@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台系统</title>
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<div class="head">
+		<img src="images/logo.png" alt="logo">
+        <input type="text" class="frt">
+        <img src="images/login.png" alt="logn" style="position: absolute;right:120px;top: 50%;margin-top: -16px">
+        <i>登录</i>
+	</div>
+	<div class="left">
+		<div class="user">
+			<div class="inco"><i></i></div>
+			<p>ABC123</p>
+		</div>
+		<div class="nub">
+		    <p class="flt">110 <br> <span>收藏</span></p>
+		    <p class="frt">313 <br><span>粉丝</span></p>
+		    <i></i>
+		</div>
+		<ul>
+		    <li>
+		        <img src="images/baobiao.png" alt="baobiao">个人报表
+		        <ul class="wenjian">
+		            <li><span>></span><img src="images/wenjian.png" alt="wenjian">文件一</li>
+		            <li id="er1">          <span id="xz">></span>
+                       <img src="images/wenjian.png" alt="wenjian">文件二
+                        <ul id="er2" class="wendang yincang">
+                            <li><img src="images/wendang.png" alt="wendang">文档1</li>
+                            <li><img src="images/wendang.png" alt="wendang">文档2</li>
+                        </ul>
+		            </li>
+		            <li><span>></span><img src="images/wenjian.png" alt="wenjian">文件三</li>
+		        </ul>
+		    </li>
+		    <li><img src="images/shoucang.png" alt="shoucang">个人收藏</li>
+		    <li><img src="images/fenxiang.png" alt="fenxiang">我的分享</li>
+		    <li><img src="images/shoucang.png" alt="tuku">图库</li>
+		    <li><img src="images/shoucang.png" alt="jilu">成长记录</li>
+		    <li><img src="images/zhanghu.png" alt="zhanghu">账户信息</li>
+		</ul>
+	</div>
+	<div class="right clearfix">
+	    <div class="mulu"><p>C站  / 个人报表 / 文件一／<span style="color:#6898c2">文档一</span></p></div>
+	    <div class="wrap">
+	        <div class="sousuo">
+	            <span style="font-size:12px;line-height:26px;font-family: '黑体';color:#aaaaaa;margin-left:30px;vertical-align: middle;">查询项</span><select style=" vertical-align: middle;margin-left:16px"><option>选项一</option></select>
+	            <span style="margin-left: 38px;vertical-align: middle">买房<select style=" vertical-align: middle;margin-left:15px;width:117px;height:23px"><option>小A</option></select></span>
+	            <br>
+	            <span style="margin-left: 193px;vertical-align: middle">卖方<select style=" vertical-align: middle;margin-left:15px;width:117px;height:23px"><option>小C</option></select></span>
+	            <img style=" vertical-align: middle;margin-top:-21px;margin-left:-5px" src="images/huan.png" alt="huan">
+	            <div class="sousuo1">
+	               <span style="vertical-align: middle;margin-left:30px;">日期<input style="width:120px;height:19px;vertical-align: middle;margin-left:15px" type="text" value="2016-04-01"></span>
+	               <span style="vertical-align: middle;margin-left:10px">总耗时
+	               <select style=" vertical-align: middle;margin-left:10px;width:70px;height:23px"><option>8天</option></select>
+	               </span>
+	               <br>
+	               <span style="vertical-align: middle;margin-left:412px">人数</span><select style=" vertical-align: middle;margin-left:14px;width:70px;height:23px"><option>10人</option></select>
+	               <span style="vertical-align: middle;margin-left:16px">成交项</span><select style=" vertical-align: middle;margin-left:14px;width:120px;height:23px"><option>10项</option></select>
+	               <button>搜索</button>
+	            </div>
+	        </div>
+	        <div class="chaxun">
+	            <div class="chaxun1">   </div>
+	            <div class="chaxun2 bk" style="height:61px">
+	                <p>10:00 am</p>
+	                <p style="color:#aeaead;font-size: 16px;">¥<span style="color:#ec6602;font-size: 21px;">1200</span></p>
+	            </div>
+	            <div class="chaxun2">
+	                <p>11:00 am</p>
+	                <p style="color:#aeaead;font-size: 16px;">¥<span style="color:#ec6602;font-size: 21px;">1300</span></p>
+	            </div>
+	            <div class="chaxun2">
+	                <p>12:00 am</p>
+	                <p style="color:#aeaead;font-size: 16px;">¥<span style="color:#ec6602;font-size: 21px;">1200</span></p>
+	            </div>
+	            <div class="chaxun2">
+	                <p>01:00 am</p>
+	                <p style="color:#aeaead;font-size: 16px;">¥<span style="color:#ec6602;font-size: 21px;">1400</span></p>
+	            </div>
+	            <div class="chaxun2">
+	                <p>02:00 am</p>
+	                <p style="color:#aeaead;font-size: 16px;">¥<span style="color:#ec6602;font-size: 21px;">1500</span></p>
+	            </div>
+	            <div class="chaxun2">
+	                <p>03:00 am</p>
+	                <p style="color:#aeaead;font-size: 16px;">¥<span style="color:#ec6602;font-size: 21px;">1800</span></p>
+	            </div>
+	            <div class="chaxun3">   </div>
+	            <div class="chaxun4">
+	                历史查询
+	            </div>
+	        </div>
+	        <div class="tongji">
+	            <p>2016年4月份统计</p>
+	            <ul>
+                    <li style="border-left: 3px solid #43b29d;">           <p>133311</p>
+                        <span style="background-color:#43b29d"></span>
+                        <p style="font-size: 10px;font-family: '黑体';line-height: 20px;color: #aaaaaa;padding: 0 0 0 10px">成交量</p>
+	                </li>
+	                <li style="border-left: 3px solid #388ac1;">           <p>133311</p>
+                        <span style="background-color:#388ac1"></span>
+	                    <p style="font-size: 10px;font-family: '黑体';line-height: 20px;color: #aaaaaa;padding: 0 0 0 10px">成交量</p>
+	                </li>
+	                <li style="border-left: 3px solid #d04b36;">           <p>133311</p>
+                        <span style="background-color:#d04b36"></span>
+	                    <p style="font-size: 10px;font-family: '黑体';line-height: 20px;color: #aaaaaa;padding: 0 0 0 10px">成交量</p>
+	                </li>
+	                <li style="border-left: 3px solid #e2cd46;margin-right:0">
+	                   <p>133311</p>
+	                   <span style="background-color:#e2cd46"></span>
+	                   <p style="font-size: 10px;font-family: '黑体';line-height: 20px;color: #aaaaaa;padding: 0 0 0 10px">成交量</p>
+	                </li>
+	            </ul>
+	        </div>
+	        <div class="xiangmu flt" >
+	            <div class="xiangmu-top">第一组项目</div>
+	            <ul>
+	                <li class="xm" style="background-color: #fff">项目一
+	                    <i style="position: absolute;top: 25px;left: 1px;"></i>
+	                    <div class="xiangmu1">
+	                        <table>
+	                            <tr>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                                <td>购置材料一</td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                </li>
+	                <li>项目二
+	                    <i style="position: absolute;top: 25px;left: 84px;display:none"></i>
+	                    <div class="xiangmu1" style="display:none">
+                            <table>
+	                            <tr>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                                <td>购置材料二</td>
+	                            </tr>
+	                        </table>
+                        </div>
+	                </li>
+	                <li>项目三
+	                    <i style="position: absolute;top: 25px;left: 167px;display:none"></i>
+	                    <div class="xiangmu1"  style="display:none">
+                            <table>
+	                            <tr>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                                <td>购置材料三</td>
+	                            </tr>
+	                        </table>
+                        </div>
+	                </li>
+	                <li>项目四
+	                    <i style="position: absolute;top: 25px;left: 250px;display:none"></i>
+	                    <div class="xiangmu1"  style="display:none">
+                            <table>
+	                            <tr>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                                <td>购置材料四</td>
+	                            </tr>
+	                        </table>
+                        </div>
+	                </li>
+	                <li>项目五
+	                    <i style="position: absolute;top: 25px;left: 333px;display:none"></i>
+	                    <div class="xiangmu1" style="display:none">
+                            <table>
+	                            <tr>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                            </tr>
+	                            <tr>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                                <td>购置材料五</td>
+	                            </tr>
+	                        </table>
+                        </div>
+	                </li>
+	            </ul>
+	        </div>
+	        <div class="xiangqing frt">
+	            <div class="xiangqing-top">第一组项目</div>
+	            <div class="xiangqing-m">
+	                <p style="margin-left:20px;font-size:12px;color:#c3c2c2;line-height:17px">标题</p>
+	                <p style="margin-left:20px;font-size:12px;color:#535353;line-height:17px">项目报表三</p>
+	                <hr>
+	                <p style="margin-left:20px;font-size:12px;color:#c3c2c2;line-height:17px"><span>价格</span><span style="margin-left:70px">负责人</span></p>
+	                <p style="margin-left:20px;font-size:12px;color:#535353;line-height:17px"><span>158¥</span><span style="margin-left:65px">小A</span></p>
+	                <hr>
+	                <span style="display:inline-block;width:1px;height:36px;border-right:1px solid #535353; position: relative;left:85px;top: -37px;"></span>
+	                <p style="margin-top:-40px;margin-left:20px;font-size:12px;color:#c3c2c2;line-height:17px">详细描述</p>
+	                <p style="margin-left:20px;font-size:12px;color:#535353;line-height:17px">该项目目前负责是.............</p>
+	                <hr style="margin-top:120px">
+	                <input type="checkbox"  checked="checked" style="border:none;vertical-align: middle"><span style="font-size:12px;color:#c3c2c2;line-height:17px;margin-left:10px;vertical-align: middle">遵守保密协议</span>
+	                <button style="width:50px;height:25px;border:none;background-color:#388ac1;font-size:12px;color:#fff;margin-left:130px;margin-top:4px">搜索</button>
+	            </div>
+	        </div>
+	        <div class="xiangqing flt">
+	            <div class="xiangqing-top">日历</div>
+	            <select style="margin-left:24px">
+	                <option>2016年</option>
+	            </select>
+	            <select style="width:84px;margin-top:10px">
+	                <option>4月</option>
+	            </select>
+	            <select>
+	                <option>标注日期</option>
+	            </select>
+	            <select style="appearance:none;-moz-appearance:none; -webkit-appearance:none;">
+	                <option>返回今天</option>
+	            </select>
+	            <hr style="margin:10px 24px;background-color: #a9cfec;height:1px;border:none">
+	            <ul class="rili">
+	                <li style="margin-left:24px">一</li>
+	                <li>二</li>
+	                <li>三</li>
+	                <li>四</li>
+	                <li>五</li>
+	                <li>六</li>
+	                <li>日</li>
+	            </ul>
+	            <hr style="margin:30px 24px 0 24px;">
+	            <table>
+	                    <tr>
+	                        <td>&nbsp;</td>
+	                        <td>&nbsp;</td>
+	                        <td>&nbsp;</td>
+	                        <td>&nbsp;</td>
+	                        <td>1<p style="color: #c9161d">愚人节</p></td>
+	                        <td class="red">2<p style="color: #323333">甘五</p></td>
+	                        <td class="red">3<p style="color: #323333">甘六</p></td>
+	                    </tr>
+	                    <tr>
+	                        <td>4<p>甘七</p></td>
+	                        <td>5<p style="color: #c9161d">清明</p></td>
+	                        <td>6<p>甘九</p></td>
+	                        <td>7<p>三月</p></td>
+	                        <td>8<p>初二</p></td>
+	                        <td class="red rilibk">9<p style="color: #323333">初三</p></td>
+	                        <td class="red">10<p style="color: #323333">初四</p></td>
+	                    </tr>
+	                    <tr>
+	                        <td>11<p>初五</p></td>
+	                        <td class="rilibk">12<p>初六</p></td>
+	                        <td>13<p>初七</p></td>
+	                        <td>14<p>初八</p></td>
+	                        <td>15<p>初九</p></td>
+	                        <td class="red">16<p style="color: #323333">初十</p></td>
+	                        <td class="red">17<p style="color: #323333">十一</p></td>
+	                    </tr>
+	                    <tr>
+	                        <td>18<p>十二</p></td>
+	                        <td class="rilibk">19<p>十三</p></td>
+	                        <td>20<p>十四</p></td>
+	                        <td>21<p>十五</p></td>
+	                        <td>22<p>十六</p></td>
+	                        <td class="red">23<p style="color: #323333">十七</p></td>
+	                        <td class="red">24<p style="color: #323333">十八</p></td>
+	                    </tr>
+	                    <tr>
+	                        <td>25<p>十九</p></td>
+	                        <td>26<p>甘十</p></td>
+	                        <td>27<p>甘一</p></td>
+	                        <td>28<p>甘二</p></td>
+	                        <td>29<p>甘三</p></td>
+	                        <td class="red">30<p style="color: #323333">甘四</p></td>
+	                        <td>&nbsp;</td>
+	                    </tr>
+	                </table>
+	        </div>
+	        <div class="xiangmu frt" >
+	            <div class="xiangmu-top">汽车行业品牌榜</div>
+	            <table class="nr">
+	                <tr>
+                        <td style="width:66px">排名</td>
+                        <td style="width:90px">品牌</td>
+                        <td>搜索指数</td>
+	                </tr>
+	                <tr>
+	                    <td>1</td>
+	                    <td>大众</td>
+	                    <td><i style="vertical-align: middle">48271928</i><span><b style="width: 142px;height: 6px;background-color: #ed6e52;"></b></span>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>2</td>
+	                    <td>丰田</td>
+	                    <td><i>43443221</i><span><b style="width: 121px;height: 6px;background-color: #ef8150;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>3</td>
+	                    <td>奥迪</td>
+	                    <td><i>43443221</i><span><b style="width: 104px;height: 6px;background-color: #f19e4f;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>4</td>
+	                    <td>本田</td>
+	                    <td><i>40412434</i><span><b style="width: 97px;height: 6px;background-color: #7ecaef;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>5</td>
+	                    <td>福特</td>
+	                    <td><i>32512414</i><span><b style="width: 87px;height: 6px;background-color: #8ecdee;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>6</td>
+	                    <td>宝马</td>
+	                    <td><i>32512414</i><span><b style="width: 77px;height: 6px;background-color: #7fcbf0;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>7</td>
+	                    <td>现代</td>
+	                    <td><i>32512414</i><span><b style="width: 67px;height: 6px;background-color: #7fcbf0;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>8</td>
+	                    <td>起亚</td>
+	                    <td><i>22434554</i><span><b style="width: 57px;height: 6px;background-color: #7fcbf0;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>9</td>
+	                    <td>奔驰</td>
+	                    <td><i>20342355</i><span><b style="width: 47px;height: 6px;background-color: #7fcbf0;"></b></span></td>
+	                </tr>
+	                <tr>
+	                    <td>10</td>
+	                    <td>别克</td>
+	                    <td><i>12323454</i><span><b style="width: 32px;height: 6px;background-color: #7fcbf0;"></b></span></td>
+	                </tr>
+	            </table>
+	        </div>
+	    </div>
+	</div>
+
+</body>
+<script type="text/javascript" src="http://www.sz886.com/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

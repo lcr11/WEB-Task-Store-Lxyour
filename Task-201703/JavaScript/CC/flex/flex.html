@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>flex</title>
+    <style>
+        body,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .flex-box{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flesbox;
+            display: -webkit-flex;
+            display: flex;
+            height: 300px;
+            background: #1c1c1c;
+            flex-flow: column wrap;    /*flex-direction - 定义项目的排列方向；
+                                        flex-wrap - 定义项目的换行方式，如强制换行，默认不换行；此为：竖排、换行*/
+            justify-content:center;    /*justify-content - 定义子元素在水平轴的对齐方式；此处：居中，水平中轴对齐*/
+            align-items:center;        /*align-items - 定义项目在交叉轴上的对齐方式*此处：竖直居中*/
+        }
+        .flex-box li{
+            width: 100px;
+            flex: 0.2 1 80px;          /*放大、缩小比例，大小。默认为：flex:0 1 auto;*/
+            height: 100px;
+            background:#ccc;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .flex-box li:nth-child(3){    /*不想按顺序，把第三个child放第一个~默认是order：0*/
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+   <ul class="flex-box">
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+       <li>8</li>
+   </ul>
+    
+</body>
+</html>

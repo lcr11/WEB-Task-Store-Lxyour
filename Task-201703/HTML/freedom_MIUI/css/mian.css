@@ -1,0 +1,189 @@
+/*属性重置*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 {margin:0;padding:0}
+
+body {background:#fff;color:#000;font-size:12px;font-style:normal;font-family:'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial',sans-serif;}
+
+em, b, i {font-style:normal;}
+
+ul,ol{list-style:none}
+
+img {border:none}
+
+a {text-decoration:none;}
+
+a:hover {text-decoration:none;}
+
+table {border-spacing:0;border-collapse:collapse}
+
+/*常用属性*/
+.flt{float:left}
+
+.frt{float:right}
+
+.clearfix:after,.clearfix:before{
+    content:" ";
+    display: table;
+}
+
+.clearfix:after{clear: both}
+
+
+.header{
+    min-width: 980px;
+    background-color: #000000;
+    height: 49px;
+}
+
+.head{
+    position: relative;
+    max-width: 1240px;
+    height: 49px;
+    margin: 0 auto;
+}
+
+.head>a {
+    width: 46px;
+    height: 17px;
+    position: absolute;
+    top: 16px;
+    left: 0
+}
+
+.head p a{
+    color: #ddd;
+    margin-left:30px;
+    font-size: 14px;
+    font-family: 'microsoft yahei'
+}
+
+.head a.current{
+    color: #868686
+}
+
+.head p.menu {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 600px;
+    height: 30px;
+    text-align: right;
+    line-height: 30px
+}
+
+.appbox{
+    width: 1240px;
+    padding: 156px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e1e1
+}
+
+.appbox ul li {
+    float: left;
+    display: block;
+    width: 412px;
+    height: 56px;
+    text-align: center;
+    border-right: 1px solid #e1e1e1;
+    margin-top: -28px
+}
+
+.appbox ul li:last-child{
+    border-right: none
+}
+
+.appbox ul li a img{
+    margin-right: 24px
+}
+
+.appbox ul li a div{
+    display: inline-block;
+}
+
+.appbox ul li a:hover span,
+.appbox ul li a:hover p{
+    color: #f78200
+}
+
+.appbox ul li a p{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    color: #333
+}
+
+.appbox ul li a span{
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+    color: #939393;
+    display: block;
+}
+
+.foot{
+    width: 1240px;
+    height: 57px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.foot ul{
+    text-align: center;
+    height: 14px;
+    margin-bottom: 15px;
+}
+
+.foot ul li{
+    display: inline-block;
+    width: 111px;
+    height: 14px;
+    border-right: 1px solid #e1e1e1;
+    line-height: 14px
+}
+
+.foot ul li a{
+    font-size: 14px;
+    color: #858585;
+}
+
+.foot p{
+    color: #c5c6c8;
+    font-size: 11px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.foot ul li:last-child{
+    border-right: none
+}
+
+.foot ul li a:hover{
+    color: #f78200;
+    text-decoration: underline;
+}
+
+.foot ul li a.wechat{
+    position: relative;
+}
+
+.foot ul li a.wechat img{
+    position: absolute;
+    left: -48px;
+    top: -150px;
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+
+.foot ul li a.wechat:hover img{
+    display: block;
+}
+.flexslider{position:relative;height:657px;overflow:hidden;background:url(../images/loading.gif) 50% no-repeat;}
+.slides{position:relative;z-index:1;}
+.slides li{height:657px;}
+.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(../images/dot.png) right 0 no-repeat;cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}

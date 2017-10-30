@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no" />
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  		<meta name="apple-mobile-web-app-capable" content="yes">
+  		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  		<!-- UC强制全屏 -->
+  		<meta name="full-screen" content="yes">
+  		<!-- QQ强制全屏 -->
+  		<meta name="x5-fullscreen" content="true">
+
+   <link rel="apple-touch-icon" href="image/15.png" />
+   <link rel="stylesheet" href="css/modules.css">
+  <title>小米模仿站</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="plugin/swiper-3.4.1.min.css">
+  <link rel="stylesheet" href="plugin/animate.min.css">
+  <script src="js/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+    <!-- **********************-头部固定搜索款 - **********************-->
+  <header>
+        <a href="#" class="logo">
+            <img src="image/logo.png" alt="">
+        </a>
+        <a href="search.html" class="find">
+            <button type="text"  >  搜索内容
+               <img src="image/find.png" alt="" class="find">
+            </button>
+        </a>
+        <div style="flex:1;text-align:center">
+               <a class="login" href="#">登录</a>
+        </div>
+  </header>
+
+    <!--*********************轮播图 **********************************-->
+  <section class="banner">
+      <div class="swiper-container">
+         <div class="swiper-wrapper">
+             <div class="swiper-slide"> <img src="image/banner.png" alt=""></div>
+             <div class="swiper-slide"> <img src="image/banner2.png" alt=""></div>
+         </div>
+         <!-- 如果需要分页器 -->
+         <div class="swiper-pagination" style="margin-left:40%"></div>
+         <!-- 如果需要滚动条 -->
+         <div class="swiper-scrollbar" style="display:none"></div>
+      </div>
+  </section>
+  <script>
+    $(function(){
+      var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay:5000,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        // 如果需要滚动条
+        scrollbar: '.swiper-scrollbar',
+      });
+    })
+
+  </script>
+   <!--- **********************内容部分- **********************************-->
+  <section class="content">
+     <!--商城早报 -->
+     <div class="sczb">
+           <div class="sczb-tp">
+                 <div class="title">
+                   商城早报
+                 </div>
+                 <div class="tp-text">
+                      <p style="opacity:1"><a href="#">這是第一条新闻</a></p>
+                        <p ><a href="#">這是第二条新闻</a></p>
+                          <p><a href="#">這是第三条新闻</a></p>
+                 </div>
+           </div>
+           <div class="sczb-bt">
+                <a class="bt-left" href="#">
+                    <img src="image/1.png" alt="">
+                </a>
+                <div class="bt-right" >
+                    <a class="right-t" href="#">
+                      <img src="image/2.png" alt="">
+                    </a>
+                    <a class="right-b" href="#">
+                      <img src="image/3.png" alt="">
+                    </a>
+                </div>
+           </div>
+       </div>
+     <!--明星单品  -->
+     <div class="mx-production">
+        <div class="pro-title">
+          明星单品
+        </div>
+        <div class="pro-top">
+          <a href="#">
+              <img src="image/4.png" alt="">
+          </a>
+        </div>
+        <div class="pro-content">
+                   <ul>
+                     <li class="module1">
+                       <div class="module1-left">
+                         <a href="#">
+                           <img src="image/6.png" alt="">
+                         </a>
+                          <p>
+                            <a href="#" class="titles">小米手环2</a>
+                            <span class="note">oloed显示屏</span>
+                            <span class="prize">￥339.8</span>
+                          </p>
+                       </div>
+                       <div class="module1-right">
+                         <a href="#">
+                           <img src="image/5.png" alt="">
+                         </a>
+                          <p>
+                            <a href="#" class="titles">小米手环2</a>
+                            <span class="note">oloed显示屏</span>
+                            <span class="prize">￥339.8</span>
+                          </p>
+                       </div>
+                     </li>
+                     <li class="module1">
+                       <div class="module1-left">
+                         <a href="#">
+                           <img src="image/5.png" alt="">
+                         </a>
+                          <p>
+                            <a href="#" class="titles">小米手环2</a>
+                            <span class="note">oloed显示屏</span>
+                            <span class="prize">￥339.8</span>
+                          </p>
+                       </div>
+                       <div class="module1-right">
+                         <a href="#">
+                           <img src="image/6.png" alt="">
+                         </a>
+                          <p>
+                            <a href="#" class="titles">小米手环2</a>
+                            <span class="note">oloed显示屏</span>
+                            <span class="prize">￥339.8</span>
+                          </p>
+                       </div>
+                     </li>
+                     <li class="module1">
+                       <div class="module1-left">
+                         <a href="#">
+                           <img src="image/6.png" alt="">
+                         </a>
+                          <p>
+                            <a href="#" class="titles">小米手环2</a>
+                            <span class="note">oloed显示屏</span>
+                            <span class="prize">￥339.8</span>
+                          </p>
+                       </div>
+                       <div class="module1-right">
+                         <a href="#">
+                           <img src="image/5.png" alt="">
+                         </a>
+                          <p>
+                            <a href="#" class="titles">小米手环2</a>
+                            <span class="note">oloed显示屏</span>
+                            <span class="prize">￥339.8</span>
+                          </p>
+                       </div>
+                     </li>
+                     <li class="module1">
+                        <div class="module1-left">
+                          <a href="#">
+                            <img src="image/5.png" alt="">
+                          </a>
+                           <p>
+                             <a href="#" class="titles">小米手环2</a>
+                             <span class="note">oloed显示屏</span>
+                             <span class="prize">￥339.8</span>
+                           </p>
+                        </div>
+                        <div class="module1-right">
+                          <a href="#">
+                            <img src="image/6.png" alt="">
+                          </a>
+                           <p>
+                             <a href="#" class="titles">小米手环2</a>
+                             <span class="note">oloed显示屏</span>
+                             <span class="prize">￥339.8</span>
+                           </p>
+                        </div>
+                      </li>
+                   </ul>
+        </div>
+        <div class="pro-bot">
+            <a href="#">
+              <img src="image/7.png" alt="">
+            </a>
+        </div>
+     </div>
+      <!--新品上线   -->
+     <div class="mx-production xp-production">
+       <div class="pro-title">
+         新品上线
+        </div>
+       <div class="pro-top">
+         <a href="#">
+             <img src="image/8.png" alt="">
+         </a>
+       </div>
+       <div class="pro-content">
+           <!--循环内容  s -->
+          <ul>
+            <li class="module1">
+              <div class="module1-left">
+                <a href="#">
+                  <img src="image/9.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+              <div class="module1-right">
+                <a href="#">
+                  <img src="image/10.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+            </li>
+            <li class="module1">
+              <div class="module1-left">
+                <a href="#">
+                  <img src="image/10.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+              <div class="module1-right">
+                <a href="#">
+                  <img src="image/6.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+            </li>
+            <li class="module1">
+              <div class="module1-left">
+                <a href="#">
+                  <img src="image/9.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+              <div class="module1-right">
+                <a href="#">
+                  <img src="image/10.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+            </li>
+          </ul>
+            <!--循环内容  e -->
+       </div>
+       <div class="morepro">
+          <a href="#">更多新品></a>
+       </div>
+       <div class="pro-bot">
+           <a href="#">
+             <img src="image/11.png" alt="">
+           </a>
+       </div>
+     </div>
+      <!--米家智能  s-->
+     <div class="mx-production mj-production">
+        <div class="pro-title">
+           米家智能
+        </div>
+        <div class="pro-top">
+          <a href="#">
+              <img src="image/12.png" alt="">
+          </a>
+        </div>
+        <ul class="mj-content">
+              <li>
+              <div class="lis-l">
+                <a href="#">
+                    <img src="image/14.png" alt="">
+                </a>
+              </div>
+              <div class="lis-r">
+                <a href="#" class="titles">小米手环2</a>
+                <span class="note">oloed显示屏loed显示屏loed显示屏</span>
+                <span class="prize">￥339.8</span>
+              </div>
+            </li>
+            <li>
+              <div class="lis-l">
+                <a href="#" class="titles">小米手环2</a>
+                <span class="note">oloedloed显示屏loed显示屏显示屏</span>
+                <span class="prize">￥339.8</span>
+              </div>
+              <div class="lis-r">
+                <a href="#">
+                    <img src="image/13.png" alt="">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="lis-l">
+                <a href="#">
+                    <img src="image/15.png" alt="">
+                </a>
+              </div>
+              <div class="lis-r">
+                <a href="#" class="titles">小米手环2</a>
+                <span class="note">oloed显loed显示屏loed显示屏示屏</span>
+                <span class="prize">￥339.8</span>
+              </div>
+            </li>``
+        </ul>
+        <div class="morepro">
+           <a href="#">更多米家智能产品</a>
+        </div>
+     </div>
+     <!--猜你喜欢 s-->
+     <div class="guess">
+       <ul class="guess-content">
+         <li>
+           <a href="#">
+             <img src="image/16.png" alt="">
+           </a>
+         </li>
+         <li>
+           <a href="#">
+             <img src="image/17.png" alt="">
+           </a>
+         </li>
+       </ul>
+       <ul class="guess-content">
+         <li>
+           <a href="#">
+             <img src="image/18.png" alt="">
+           </a>
+         </li>
+         <li>
+           <a href="#">
+             <img src="image/19.png" alt="">
+           </a>
+         </li>
+       </ul>
+       <ul class="guess-content">
+         <li>
+           <a href="#">
+             <img src="image/20.png" alt="">
+           </a>
+         </li>
+         <li>
+           <a href="#">
+             <img src="image/21.png" alt="">
+           </a>
+         </li>
+       </ul>
+       <div class="guess-title">
+         <img src="image/22.png" alt="">
+         <p>实时推荐你的心心念念</p>
+       </div>
+     </div>
+     <!--品质生活 s-->
+     <div class=" mx-production  pz-life">
+      <div class="pro-title">
+         品质生活
+      </div>
+      <div class=" life-content">
+           <div class="module2">
+               <div class="module2-left">
+                 <a href=""><img src="image/23.png" alt=""></a>
+                 <a href="#" class="titles">空气进化器</a>
+                 <span class="prize">￥189.9</span>
+               </div>
+               <div class="module2-right">
+                  <a href=""><img src="image/24.png" alt=""></a>
+                 <a href="#" class="titles">空气进化器</a>
+                 <span class="prize">￥189.9</span>
+               </div>
+           </div>
+           <div class="module3">
+               <div class="module3-left">
+                  <a href=""><img src="image/25.png" alt=""></a>
+                 <a href="#" class="titles">空气进化器</a>
+                 <span class="prize">￥189.9</span>
+               </div>
+               <div class="module3-right">
+                  <a href=""><img src="image/26.png" alt=""></a>
+                 <a href="#" class="titles">空气进化器</a>
+                 <span class="prize">￥189.9</span>
+               </div>
+           </div>
+      </div>
+     </div>
+     <!--智能生活 s-->
+     <div class="mx-production zn-life">
+        <div class="pro-title">
+          智能生活
+        </div>
+        <ul>
+          <li class="module1">
+            <div class="module1-left">
+              <a href="#">
+                <img src="image/28.png" alt="">
+              </a>
+               <p>
+                 <a href="#" class="titles">小米手环2</a>
+                 <span class="note">oloed显示屏</span>
+                 <span class="prize">￥339.8</span>
+               </p>
+            </div>
+            <div class="module1-right">
+              <a href="#">
+                <img src="image/29.png" alt="">
+              </a>
+               <p>
+                 <a href="#" class="titles">小米手环2</a>
+                 <span class="note">oloed显示屏</span>
+                 <span class="prize">￥339.8</span>
+               </p>
+            </div>
+          </li>
+        </ul>
+        <div class="module4">
+          <a href="#">
+             <img src="image/27.png" alt="">
+          </a>
+          <a href="#" class="titles2">小米手环2<span class="prize2">￥339.8</span></a>
+          <span class="note">oloed显示屏</span>
+        </div>
+        <ul>
+            <li class="module1">
+              <div class="module1-left">
+                <a href="#">
+                  <img src="image/28.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+              <div class="module1-right">
+                <a href="#">
+                  <img src="image/29.png" alt="">
+                </a>
+                 <p>
+                   <a href="#" class="titles">小米手环2</a>
+                   <span class="note">oloed显示屏</span>
+                   <span class="prize">￥339.8</span>
+                 </p>
+              </div>
+            </li>
+         </ul>
+     </div>
+     <!--长假游玩 s-->
+        <div class="mx-production cj-life">
+          <div class="pro-title">
+            长假游玩
+          </div>
+          <div class="module4">
+            <a href="#">
+               <img src="image/30.png" alt="">
+            </a>
+            <a href="#" class="titles2">小米手环2<span class="prize2">￥339.8</span></a>
+            <span class="note">oloed显示屏</span>
+         </div>
+         <ul>
+           <li class="module1">
+             <div class="module1-left">
+               <a href="#">
+                 <img src="image/31.png" alt="">
+               </a>
+                <p>
+                  <a href="#" class="titles">小米手环2</a>
+                  <span class="note">oloed显示屏</span>
+                  <span class="prize">￥339.8</span>
+                </p>
+             </div>
+             <div class="module1-right">
+               <a href="#">
+                 <img src="image/32.png" alt="">
+               </a>
+                <p>
+                  <a href="#" class="titles">小米手环2</a>
+                  <span class="note">oloed显示屏</span>
+                  <span class="prize">￥339.8</span>
+                </p>
+             </div>
+           </li>
+           <li class="module1">
+             <div class="module1-left">
+               <a href="#">
+                 <img src="image/33.png" alt="">
+               </a>
+                <p>
+                  <a href="#" class="titles">小米手环2</a>
+                  <span class="note">oloed显示屏</span>
+                  <span class="prize">￥339.8</span>
+                </p>
+             </div>
+             <div class="module1-right">
+               <a href="#">
+                 <img src="image/34.png" alt="">
+               </a>
+                <p>
+                  <a href="#" class="titles">小米手环2</a>
+                  <span class="note">oloed显示屏</span>
+                  <span class="prize">￥339.8</span>
+                </p>
+             </div>
+           </li>
+         </ul>
+      </div>
+     <!--新家必备 s-->
+     <div class="mx-production xj-life">
+         <div class="pro-title">
+           -新家必备
+         </div>
+         <div class="module2">
+             <div class="module2-left">
+               <a href=""><img src="image/37.png" alt=""></a>
+               <a href="#" class="titles">空气进化器</a>
+               <span class="prize">￥189.9</span>
+             </div>
+             <div class="module2-right">
+                <a href=""><img src="image/38.png" alt=""></a>
+               <a href="#" class="titles">空气进化器</a>
+               <span class="prize">￥189.9</span>
+             </div>
+         </div>
+         <div class="module3">
+             <div class="module3-left">
+                <a href=""><img src="image/41.png" alt=""></a>
+               <a href="#" class="titles">空气进化器</a>
+               <span class="prize">￥189.9</span>
+             </div>
+             <div class="module3-right">
+                <a href=""><img src="image/42.png" alt=""></a>
+               <a href="#" class="titles">空气进化器</a>
+               <span class="prize">￥189.9</span>
+             </div>
+         </div>
+         <div class="module4">
+           <a href="#">
+              <img src="image/39.png" alt="">
+           </a>
+           <a href="#" class="titles2">小米手环2<span class="prize2">￥339.8</span></a>
+           <span class="note">oloed显示屏</span>
+        </div>
+      </div>
+
+  </section>
+
+
+   <!--*********************脚步导航*********************-->
+   <footer>
+     <ul class="navbar">
+         <li>
+            <img src="image/home-c.png" alt="">
+            <p>首页</p>
+         </li>
+         <li>
+           <img src="image/flei.png" alt="">
+           <p>分类</p>
+        </li>
+         <li>
+           <img src="image/gwu.png" alt="">
+           <p>购物车</p>
+        </li>
+         <li>
+           <img src="image/me.png" alt="">
+           <p>我的</p>
+         </li>
+     </ul>
+     <script>
+         $("footer .navbar >li").eq(0).on("click",function(){
+            window.location="./index.html";
+         });
+         $("footer .navbar >li").eq(1).on("click",function(){
+            window.location="./produClass.html";
+         });
+         $("footer .navbar >li").eq(2).on("click",function(){
+            window.location="./buyCar.html";
+         });
+         $("footer .navbar >li").eq(3).on("click",function(){
+            window.location="./mine.html";
+         });
+     </script>
+   </footer>
+
+  <script src="plugin/swiper-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>*-->
+  <!--*********新闻淡入淡出**********-->
+  <script>
+  $(function(){
+    var i=1;
+    setInterval(function(){
+            $(".sczb-tp>.tp-text>p").eq(i).css("opacity","1").siblings().css("opacity","0");
+            i++;
+            if(i==3){
+              i=0
+            }
+    },3000);
+    //  <!--****顶部导航变色******-->
+  $(window).on("scroll", function () {
+                var sTop = $(window).scrollTop();
+                var sTop = parseInt(sTop);
+                if (sTop >= 150) {
+                    $("header").css("background","rgba(229, 131, 53, 0.992157)");
+                    //alert(1)
+                }else{
+                    $("header").css("background","");
+                }
+            });
+  })
+    </script>
+</body>
+</html>

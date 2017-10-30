@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no" />
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  		<meta name="apple-mobile-web-app-capable" content="yes">
+  		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  		<!-- UC强制全屏 -->
+  		<meta name="full-screen" content="yes">
+  		<!-- QQ强制全屏 -->
+  		<meta name="x5-fullscreen" content="true">
+
+  <title>小米模仿站</title>
+  <link rel="stylesheet" href="css/mine.css">
+  <link rel="stylesheet" href="plugin/swiper-3.4.1.min.css">
+  <link rel="stylesheet" href="plugin/animate.min.css">
+  <link rel="stylesheet" href="css/modules.css">
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="plugin/swiper-3.4.1.min.js"></script>
+</head>
+<body>
+<!--  头部-->
+   <header>
+      <div class="user">
+              <img src="image/mine/user.png" alt="">
+      </div>
+   </header>
+<!--  呢容部分-->
+  <section class="content">
+    <!--上步-->
+     <div class="top">
+       <!--我的订单-->
+        <div class="title">
+           <span>我的订单</span>
+           <a href="####">全部订单</a>
+        </div>
+        <!--按钮部分-->
+        <ul class="btns">
+           <li><a href="####">
+                <img src="image/mine/1.png" alt="">
+                <p>待付款</p>
+           </a></li>
+           <li><a href="####">
+                <img src="image/mine/1.png" alt="">
+                <p>待付款</p>
+           </a></li>
+           <li><a href="####">
+                <img src="image/mine/2.png" alt="">
+                <p>待付款</p>
+           </a></li>
+       </ul>
+     </div>
+  <!--   下部-->
+      <ul class="bottom">
+            <li><a href="####">
+                <b>
+                  <img src="image/mine/3.png" alt="">
+                </b>
+                <p>我的优惠</p>
+                <span>></span>
+            </a></li>
+            <li><a href="####">
+                <b>
+                  <img src="image/mine/5.png" alt="">
+                </b>
+                <p>我的优惠</p>
+                <span>></span>
+            </a></li>
+            <li><a href="####">
+                <b>
+                  <img src="image/mine/6.png" alt="">
+                </b>
+                <p>我的优惠</p>
+                <span>></span>
+            </a></li>
+            <li><a href="####">
+                <b>
+                  <img src="image/mine/7.png" alt="">
+                </b>
+                <p>我的优惠</p>
+                <span>></span>
+            </a></li>
+      </ul>
+  </section>
+
+
+<!--脚部导航-->
+  <footer>
+    <ul class="navbar">
+        <li>
+           <img src="image/home.png" alt="">
+           <p>首页</p>
+    </li>
+        <li>
+          <img src="image/flei.png" alt="">
+          <p>分类</p>
+      </li>
+        <li>
+          <img src="image/gwu.png" alt="">
+          <p>购物车</p>
+        </li>
+        <li>
+          <img src="image/me-c.png" alt="">
+          <p>我的</p>
+       </li>
+    </ul>
+    <script>
+        $("footer .navbar >li").eq(0).on("click",function(){
+           window.location="./index.html";
+        });
+        $("footer .navbar >li").eq(1).on("click",function(){
+           window.location="./produClass.html";
+        });
+        $("footer .navbar >li").eq(2).on("click",function(){
+           window.location="./buyCar.html";
+        });
+        $("footer .navbar >li").eq(3).on("click",function(){
+           window.location="./mine.html";
+        });
+    </script>
+  </footer>
+</body>
+</html>

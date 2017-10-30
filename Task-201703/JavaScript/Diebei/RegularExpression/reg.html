@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+</head>
+<body>
+   <form class="modules-form" action="" method="post">
+<!--
+        <div class="input-field">
+            <label for="">用户名:</label>
+            <input id="username" type="text" name="" value="">
+        </div>
+        <div class="input-field">
+            <label for="">密码:</label>
+            <input id="password" type="text" name="" value="">
+        </div>
+        <div class="input-field">
+            <label for="">邮箱:</label>
+            <input class="email" type="text" name="" value="">
+        </div>
+        <div class="input-field">
+            <label for="">手机号:</label>
+            <input id="phoneNo" type="text" name="" value="">
+        </div>
+-->
+        <div class="input-field">
+            <label for="">固话:</label>
+            <input id="fixNumber" type="text" name="" value="">
+        </div>
+        <button id="btn" type="submit" name="botton">提交</button>   
+   </form>
+   <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>
+//       $('#myForm').on('submit',function(){})
+//       $('#btn').on('click',function(){})
+//       
+       function checkFixNum(phone) {
+           var reg = /^([0-9]{3,4})+([-])+([0-9]{7,8})+$/;
+           if(!reg.test(phone)){
+               return false;
+           }
+           return true;
+        }
+
+       $('#btn').on('click',function(){
+//           var username = $('.usrname').val()
+//           var password = $('.pwd').val()
+//           var email = $('.email').val()
+//           var phone = $('.phone').val()
+           var fixNumber = $('#fixNumber').val()
+           console.log(fixNumber)
+           
+           if(!checkFixNum(fixNumber)){
+               alert('请输入正确的固定电话号码!')
+               return false;
+           }
+           
+           return true;
+       })
+       
+    </script>
+</body>
+</html>

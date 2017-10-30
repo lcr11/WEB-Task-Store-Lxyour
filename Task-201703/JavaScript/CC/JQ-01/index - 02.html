@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <p>如果你点我，我就会消失。</p>
+    <p>继续点我!</p>
+    <p id="test">接着点我!</p>
+    <button>click</button>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();          //隐藏当前元素
+            });
+        });
+        
+//        //用户点击按钮后，所有 <p> 元素都隐藏：
+//        $(document).ready(function(){
+//            $("button").click(function(){
+//                $("p").hide();
+//            });
+//        });
+        
+        //当用户点击按钮后，有 id="test" 属性的元素将被隐藏：
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#test").hide();
+            });
+        });
+        
+
+    </script>
+</body>
+</html>
